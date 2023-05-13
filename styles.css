@@ -1,0 +1,137 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+.cf {clear: both;}
+
+html, body { height:100%; }
+
+body {
+    background-image: url(images/skyblue.png);
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1.333%;
+}
+
+h2 {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    padding-left: 7.333%;
+    padding-right: 7.333%;
+    padding-top: 2.333%;
+    padding-bottom: 2.333%;
+}
+
+.grid-container {
+	width: 90%;
+    margin-left: 4.666%;
+	margin-top: 1.333%;
+    margin-bottom: 7.333%;
+}
+
+.grid-box {
+	width: 31.333%;
+	margin: 10px 1% 10px 1%;
+	position: relative;
+    overflow: hidden;
+	float: left;
+}
+
+.grid-box img {
+	height: auto;
+}
+
+.grid-box-text {
+    width: 40.333%;
+    font-size: 32px;
+    margin-left: 5.666%;
+    margin-top: 1%;
+    font-weight: bold;
+    float: left;
+}
+
+.mouse-over {
+    display: block;
+    position: relative;
+}
+
+.mouse-over span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0,0%,0%,0.6);
+    opacity: 0.0;
+    transition: all 0.5s ease;
+}
+
+.mouse-over span p {
+    position: absolute;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-left: 2.333%;
+    padding-right: 2.333%;
+    z-index: 2;
+    font-size: 2.5em; 
+}
+
+/* visibility on hover: */
+.mouse-over:hover span {
+    opacity: 1.0;
+}
+
+/* image default: */
+.mouse-over img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+/* image scale on hover: */
+.mouse-over:hover img {
+    transform: scale(1.05);
+}
+
+.grid-box2 {
+	width: 31.333%;
+	margin: 10px 1% 10px 1%;
+	position: relative;
+    overflow: hidden;
+	float: left;
+}
+
+.grid-box2 img {
+    width: 90%;
+	height: 225px;
+	margin-top: 1.333%;
+	display: block;
+}
+
+.grid-box2 a {
+	color: black;
+	outline: none;	
+	border: 0px;
+    text-decoration: none;
+}
+
+.grid-box2 a:hover {
+    color: #999;
+}
